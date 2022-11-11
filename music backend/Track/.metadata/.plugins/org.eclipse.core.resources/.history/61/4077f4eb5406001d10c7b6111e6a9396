@@ -1,0 +1,56 @@
+package com.example.Track.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Track {
+	
+@Id
+private Integer rank;
+private Integer listeners;
+	private String url;
+	private String name;
+	
+	public Track() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Track(String url, String name, int rank, int listeners) {
+		super();
+		this.url = url;
+		this.name = name;
+		this.rank = rank;
+		this.listeners = listeners;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getRank() {
+		return rank;
+	}
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+	public int getListeners() {
+		return listeners;
+	}
+	public void setListeners(int listeners) {
+		this.listeners = listeners;
+	}
+	@Override
+	public String toString() {
+		return "Track [url=" + url + ", name=" + name + ", rank=" + rank + ", listeners=" + listeners + "]";
+	}
+	
+	
+}

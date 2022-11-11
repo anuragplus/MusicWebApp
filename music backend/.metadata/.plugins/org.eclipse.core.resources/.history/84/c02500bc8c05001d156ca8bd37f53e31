@@ -1,0 +1,25 @@
+package com.example.Track.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.Track.model.Track;
+import com.example.Track.repo.TrackRepo;
+
+@Service
+public class TrackService {
+	
+	@Autowired
+	private TrackRepo repo;
+	
+	public List<Track> getAllTracks(){
+		return repo.findAll();
+	}
+	
+	public Track addTrack(Track track) {
+	 repo.save(track);
+	 return track;
+	}
+}

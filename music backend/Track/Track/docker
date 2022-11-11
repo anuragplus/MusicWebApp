@@ -1,0 +1,3 @@
+FROM openjdk:17
+ADD target/TrackService.jar TrackService.jar
+ENTRYPOINT ["java","-jar","TrackService.jar"]

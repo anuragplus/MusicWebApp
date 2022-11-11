@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>My Favorite</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700"
+    />
+  </head>
+  <body>
+    <img
+      src="https://cdn.dribbble.com/users/296949/screenshots/4617091/singing.gif"
+    />
+    <div>
+      <h1 style="background-color: powderblue">
+        <p style="color: rgb(12, 132, 223)">favourite Music!!</p>
+      </h1>
+    </div>
+
+    <div id="set" *ngFor="let track of tracks">
+      <p id="track_name">
+        <span class="tn">{{ track.name }}</span>
+      </p>
+      <p id="song"><a href="{{ track.url }}">Play Song</a></p>
+      <p id="rank">
+        <span class="count">{{ track.rank1 }}</span>
+      </p>
+      <p id="list">
+        <span class="count">{{ track.listeners1 }}</span>
+      </p>
+    </div>
+  </body>
+</html>

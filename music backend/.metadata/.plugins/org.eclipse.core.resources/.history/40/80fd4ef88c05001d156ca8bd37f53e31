@@ -1,0 +1,30 @@
+package com.example.TracksBackend.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.Track.model.Track;
+import com.example.Track.service.TrackService;
+
+@RestController
+public class MyController {
+
+	
+	@Autowired
+	private TrackService ts;
+	
+	@GetMapping("/tracks")
+	public List<Track> getAllTracks(){
+	return	this.ts.getAllTracks();
+	}
+	
+	@PostMapping("/tracks")
+	public Track addTrack(@RequestBody Track track) {
+		return this.ts.addTrack(track);
+	}
+}

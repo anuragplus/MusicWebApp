@@ -1,0 +1,5 @@
+package com.example.MusicBackend.service;
+
+public class UserService {
+
+}

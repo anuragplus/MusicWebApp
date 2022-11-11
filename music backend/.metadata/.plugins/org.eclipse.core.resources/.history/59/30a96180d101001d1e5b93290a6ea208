@@ -1,0 +1,5 @@
+package com.example.MusicBackend.entity;
+
+public class User {
+
+}

@@ -1,0 +1,3 @@
+FROM openjdk:17
+ADD target/UserService.jar UserService.jar
+ENTRYPOINT ["java","-jar","UserService.jar"]

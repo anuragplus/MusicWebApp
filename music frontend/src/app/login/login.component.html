@@ -1,0 +1,14 @@
+<div class="login">
+<h1>Login</h1>
+<label for="username">Username or Email</label>
+<br>
+<input type="text" placeholder="Username or Email" #userName />
+<br>
+<label for="Password">Password</label>
+<br>
+<input type="text" placeholder="Password here" #password />
+<br>
+<button type="submit" (click)="btnLogIn(userName.value,password.value)" >Let Me In !</button>
+<p id="forgot" style="cursor:pointer;color: blue;" (click)="forgot()">Forgot Your usernane or password</p>
+<p id="signup">Don't have a Profile ?  <span (click)="btnSignUp()">Sign up for free </span></p>
+</div>

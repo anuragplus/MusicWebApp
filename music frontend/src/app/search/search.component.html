@@ -1,0 +1,68 @@
+<div class="line"></div>
+<div class="search">
+  <div>
+    <i class="fa fa-headphones" id="i_1"></i>
+  <h1>Need Music?</h1>
+</div>
+  <div class="word">Browse your favorite artists and see their top 5 songs using the LastFM API</div>
+  <marquee id="mar_1"><span id="sp1">Muzix App, </span> <span id="sp2">Play Your Song!!!</span></marquee>
+  <form (ngSubmit)="searchMusic()">
+    <div>
+      <div class="ser">
+        
+          <input class="input" type="text" name="searchStr" [(ngModel)]="searchStr" placeholder="Search Artists...">
+        
+        <button class="button1" (click)="searchMusic()">Search</button>
+        <button class="button2" (click)="reset()">Reset</button>
+      </div>
+    </div>
+  </form><br>
+   <div  *ngIf="searchResult"> 
+    <!-- Display Artist -->
+      <div >
+          <figure >
+            <a href="{{ artist.url }}" target="_blank"><img src="{{ artist.image }}" alt="artistImage"></a>
+            
+            <span class="wo">Listeners</span>
+            <span class="co">{{ artist.listeners | number }}</span>
+  
+            <span class="wo">Playcount</span>
+            <span class="co"> {{ artist.playcount | number }}</span>  
+            
+          </figure>
+          
+          <div class="content">
+            <a  id="a1" href="{{ artist.url }}" target="_blank"><strong>{{ artist.name }}</strong></a>
+            <br>
+              <br> <div id="artistSum" innerHTML=" {{ artist.summary }} "></div>
+          </div>
+            
+        </div> 
+  
+    <!-- Display Tracks -->
+   <h2 class="title has-text-centered">Top 5 Tracks</h2>
+    <div *ngFor="let track of tracks" class="column">
+      <div class="row" style="">
+              <div class="col">
+                <p class="title is-4 has-text-info"><a style="color:white;text-decoration:none" href="{{ track.url }}" target="_blank">{{ track.name }}  <i class="fa-solid fa-play"></i></a></p>
+              </div>
+  
+              <div class="col">
+                <p class="subtitle-has-white-text-has-text-centered">Rank<br> <span class="tag-is-light">{{ track.rank }}</span></p>
+              </div>
+              <div class="col">
+                <p class="subtitle-has-white-text-has-text-centered">Listeners<br><span class="tag-is-info">{{ track.listeners | number }}</span></p>
+              </div>
+  
+               <div > 
+  
+                <h6 style="color:white">Add To Favourites  <span style="cursor:pointer" (click)="addToFav(track.url,track.rank,track.listeners,track.name)"><i class="fa-solid fa-plus"></i> </span></h6>
+  
+  
+              </div> 
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <div class="line" ></div>

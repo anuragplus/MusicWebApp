@@ -1,0 +1,275 @@
+.line{
+    width: 100%;
+    height : 1px;
+  background: red;
+  position: relative;
+  animation: myfirst  6s infinite;
+animation-direction: alternate-reverse;
+  
+}
+@keyframes myfirst {
+    0%   {background: darkblue; left: 0px; top: 0px;}
+    25%  {background: orangered; left: 0px; top: 0px;}
+    50%  {background: blue; left: 0px; top: 0px;}
+    75%  {background: green; left: 0px; top: 0px;}
+    100% {background: pink; left: 0px; top: 0px;}
+  }
+.search{
+    background-color: black;
+    border : 1px solid black;
+}
+h1{   
+    color :whitesmoke;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    text-align : center;
+    margin-top : 20px;
+    font-size : 80px;
+    animation: heading1 2s infinite;
+}
+
+@keyframes heading1{
+    25%{color: firebrick;}
+    0%   {background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+        box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);}
+    25%  {background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+        box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);}
+    50%  {background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+        box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);}
+    75%  {background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+        box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);}
+    100% {background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+        box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);}
+
+}
+.ser{
+    margin-top: 60px;
+    margin-left: 315px;
+    width : 900px;
+    margin-bottom: 30px;
+}
+.input{
+    width:200px;
+    border : 5%;
+     background-color:whitesmoke;
+    transition-delay: 4s;
+    transition-duration: 0.6s;
+    
+}
+.input:hover{
+    
+    cursor: pointer;
+  width: 450px;
+  border: 2px solid black;
+  box-shadow: 5px 5px;
+  background-image: linear-gradient(to left, black, white);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  transition-delay: 0.2s; 
+  transition-duration: 0.5s;
+    
+}
+.button1{
+    background-color: red;
+    width: 150px;   
+    height : 30px;
+    margin-left: 5px;
+    color : white;
+    border-radius: 5%;
+    border : none;
+    margin-right : 5px;
+    transition-delay: 2s;
+    transition-duration: 0.6s;
+    
+}
+
+.button1:hover{
+    transition-delay: 0.2s;
+    transition-duration: 0.6s;
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    color: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    transition: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+.button2{
+    background-color: red;
+    width: 150px;   
+    height : 30px;
+    margin-right: 10px;
+    color : white;
+    border-radius: 5%;
+    border : none;
+    transition-delay: 2s;
+    transition-duration: 0.6s;
+}
+
+.button2:hover{
+    transition-delay: 0.2s;
+    transition-duration: 0.6s;
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    color: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+
+}
+form{
+    width: auto;
+}
+
+.word{
+    margin-left: 150px;
+    color:whitesmoke;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    animation: word_1 2s infinite;
+    transition-delay: 0.6s;
+    transition-duration: 0.3s;
+}
+
+
+
+.word:hover{
+    color:maroon;
+    transition-delay: 0.6s;
+    transition-duration: 0.3s;
+    transform:scale(0.9);
+    
+}
+
+figure{
+        margin-left: 325px;
+        width: 100%;     
+}
+.column{
+    margin-left: 325px;
+    border: 1px solid white;
+    width:825px;
+    margin-bottom: 5px;
+
+}
+
+.wo{
+    padding:9px;
+    font-size:15px;
+    font-family:cursive;
+    background-color:white;
+    color:black;
+    margin-left: 10px;
+    width : 90px;
+}
+.content{
+    font-family:cursive;
+    font-size: 110%;
+}
+
+#artistSum{
+    color: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    color:whitesmoke;
+  
+}
+
+#a1{
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 110%;
+}
+
+
+.co{
+    padding:9px;
+    font-size:15px;
+    font-family: cursive;
+    background-color:red;
+    color:black;
+    width : 60px;
+
+}
+.content{
+    margin-left: 325px;
+    color: white;
+    margin-right: 105px;
+    margin-bottom: 50px;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: cursive;
+    font-size: 180%;
+
+}
+.subtitle-has-white-text-has-text-centered{
+    color:white;
+}
+.tag-is-light{
+    display: table; 
+    padding:3px;
+    font-size:15px;
+    background-color:white;
+    color:black;
+    margin-left: 10px;
+}
+.tag-is-info{
+    display: table; 
+    padding:3px;
+    font-size:15px;
+    background-color:red;
+    color:black;
+    margin-left: 17px; 
+}
+.row {
+    border: none;
+    padding: 25px;
+}
+
+.col {
+    
+  width: 50%;
+  padding: 10px;
+  height: 50px;
+}  
+
+#i_1{
+    font-size: 72px;
+    color: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 20px 15px 0 rgba(45, 54, 65, 0.75);
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    border-radius: 30%;
+    transition-delay: 0.6s;
+    transition-duration: 0.3s;
+    animation: headphone 2s infinite;
+}
+@keyframes headphone{
+    0% {transform:scale(0.5); }
+    25% {transform: scale(1.0);}
+    50% {transform: scale(1.5);}
+    75% {transform: scale(1.0);}
+    100%{transform: scale(0.5);}
+}
+
+#mar_1{
+    font-size: 27px;
+    font-family: cursive;
+    position: absolute;
+    top: 42%;
+    
+}
+
+
+#sp1{
+    color: red;
+}
+#sp2{
+    color: whitesmoke;
+    font-style: italic;
+    animation: mar1 3s infinite;
+}
+
+
+

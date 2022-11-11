@@ -1,0 +1,31 @@
+.footer{
+    background-color:black;
+    width : 100%;
+}
+.footer1{
+    display : flex;
+}
+.footer1 div{
+    margin: 30px;
+    width : 200px;
+    
+}
+.footer1 div h5{
+    color : grey;
+}
+.footer1 div h6{
+    color : white;
+    font-size: 15px;
+}
+.line{
+    margin-top: 10px;
+    border : 1px solid grey;
+    width : 100%;
+}
+.footer2 h5{
+color : white;
+margin-top : 5px;
+}
+.footer2 i{
+    color : white;
+}

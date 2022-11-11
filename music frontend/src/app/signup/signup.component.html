@@ -1,0 +1,30 @@
+
+<div class="signup">
+<h3>Create Your Account</h3>
+
+<label for="Name">Name</label>
+<br>
+<input type="text" placeholder="Name"  #name   name="name" id="name"  />
+<br>
+<label for="Name">UserName</label>
+<br>
+<input type="text" placeholder="UserName" #username  />
+<br>
+<label for="Phone Number">Mobile Number</label>
+<br>
+<input type="text" placeholder="Mobile Number" #mobile />
+<br>
+<label for="Email">Email</label>
+<br>
+<input type="email" placeholder="Email" #email/>
+<br>
+<label for="Passowrd" >Password</label>
+<br>
+<input type="password" #pass placeholder="Password" />
+<br>
+<label for="Confirm" >Confirm Passowrd</label>
+<br>
+<input type="password" #confirm placeholder=" Confirm Password" />
+<br>
+<button (click)="registerNow(pass.value,confirm.value,name.value,email.value,mobile.value,username.value)">SignUp!</button>
+</div>

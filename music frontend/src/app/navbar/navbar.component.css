@@ -1,0 +1,33 @@
+.navbar{
+    background-color: black;
+    color : white;
+}
+i{
+    font-size: 30px;
+}
+h2{
+    margin-left: 200px;
+    color : red;
+    margin-right: 210px;
+}
+h5{
+    font-size:15px;
+    margin-top: 5px;
+}
+
+.login{
+    color : white ;
+    background-color:black;
+    height : 40px;
+    width : 70px;
+    border-radius: 5%;
+    margin-top: 0;
+}
+.signup{
+    background-color: white;
+    color : black;
+    height : 40px;
+    width : 90px;
+    border-radius: 5%;
+    margin-right: 10px;
+}

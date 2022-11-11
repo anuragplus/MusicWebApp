@@ -1,0 +1,5 @@
+package com.example.MusicBackend.repository;
+
+public interface UserRepo {
+
+}
